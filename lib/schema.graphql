@@ -1,0 +1,18 @@
+type Book {
+    _id: ID!
+	title: String!
+    description: String
+    isbn: String
+    # year: Integer
+}
+
+type Query {
+    "Devuelve todos los libros"
+    getBooks: [Book]
+    "Devuelve como resultado un libro"
+    getBook(id: ID!): Book
+}
+
+# type Mutation {
+
+# }
